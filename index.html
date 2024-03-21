@@ -71,7 +71,7 @@
 
 
 
-						<div id="navbar">
+						<!-- <div id="navbar">
 							<a href=""><img src="images/arrière_plan_logo-removebg-preview.png" alt="logo-image" style="height: 70px ;"></a>
 							<ul>
 								<li class="menu">
@@ -91,11 +91,30 @@
 								</li>
 							</ul>
 							<div class="burger" id="icones"></div>
-						</div>
+						</div> -->
 					<!-- </div>
 				</nav>
 			</div>
 		</div> -->
+
+
+
+
+		<nav>
+			<div class="logo">
+				<a href="#home"><img src="images/arrière_plan_logo-removebg-preview.png" alt="logo" height="100px"></a>
+			</div>
+			<ul id="menuList">
+				<li><a href="#home">Acceuil</a></li>
+				<li><a href="#team">Formations</a></li>
+				<li><a href="#services">Services</a></li>
+				<li><a href="#features">Opportunités</a></li>
+				<li><a href="#price">Tarifs</a></li>
+			</ul>
+			<div class="menu-icon">
+				<i class="fa-solid fa-bars" onclick="toggleMenu()"></i>
+			</div>
+		</nav>
 		<!--================================= NAVIGATION END ==========================================-->	
 		
 		
@@ -262,7 +281,7 @@
 								</div>
 							</div>
 							<div class="team-col4-content">
-								<h5>Graphisme</h5>
+								<h5>Infographie</h5>
 								<p class="content-top-space1"> Découvrez les methodes et les outils de conception lié aux methodologies de graphismes sur support digitales. </p>
 							</div>
 						</div>
@@ -298,8 +317,8 @@
 								</div>
 							</div>
 							<div class="team-col4-content">
-								<h5>Content Design</h5>
-								<p class="content-top-space1"> Découvrez les methodologies de rédaction de contenu pour mieux vendre et devenir percutant dans vos contenus </p>
+								<h5>Content Marketing </h5>
+								<p class="content-top-space1">Création et partage de contenu pertinent pour attirer et engager une audience ciblée garce aux outils numériques. </p>
 							</div>
 						</div>
 					</div>
@@ -332,8 +351,8 @@
 								</div>
 							</div>
 							<div class="team-col4-content">
-								<h5>Intelligence Artificielle</h5>
-								<p class="content-top-space1">Maîtriser l'utilisation de l'intelligence artificielle et devenez productif grâce aux nouveaux outils de l'IA. </p>
+								<h5>Social Media Marketing</h5>
+								<p class="content-top-space1">Utilisation des plateformes de médias sociaux pour promouvoir une marque et interagir avec les clients. </p>
 							</div>
 						</div>
 					</div>
@@ -1026,6 +1045,27 @@
 		<script type="text/javascript" src="js/custom/custom.js"></script>	
 		<!-- RETINA JS FILES -->		
 		<script type="text/javascript" src="js/vendor/retina.js"></script>
+
+		<!-- nav bar responsive -->
+
+		<script>
+			let menuList = document.getElementById("menuList")
+			menuList.style.maxHeight = "0px";
+	
+			function toggleMenu(){
+				if(menuList.style.maxHeight == "0px")
+				{
+					menuList.style.maxHeight = "300px";
+				}
+				else{
+					menuList.style.maxHeight = "0px";
+				}
+			}
+			
+		</script>
+		<script src="https://kit.fontawesome.com/f8e1a90484.js" crossorigin="anonymous"></script>
+
+		<!-- Navbar responsive -->
 	</body>
 
 <!-- Mirrored from www.evethemes.com/demo/lp/health/preview/yoga.html by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 14 Mar 2024 12:07:09 GMT -->

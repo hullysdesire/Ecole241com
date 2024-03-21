@@ -3794,7 +3794,7 @@ img .icones{
 
 
 
-li{
+/* li{
 	list-style: none;
 }
 a,
@@ -3843,18 +3843,18 @@ a:hover{
 		content: \2715;
 	} */
 
-	#navbar ul {
+	/* #navbar ul {
 		position: fixed;
 		left: -100%;
 		top: 5%;
 		flex-direction: column;
-		/* background-color:#f3c003 ; */
+		background-color:#f3c003 ;
 		width: 100%;
 		text-align: center;
 		transition: 0.25s;
-	}
+	} */
 
-	#navbar li {
+	/* #navbar li {
 		padding: 3px 0;
 	}
 
@@ -3864,7 +3864,68 @@ a:hover{
 
 	#navbar.active ul{
 		left: 0;
+	} */
+
+
+
+	nav{
+		padding: 10px 30px;
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+		background: white;
+		position: relative;
+		height: 70px;
 	}
-
-
-}
+	
+	.logo{
+		color: #fff;
+	}
+	
+	nav ul{
+		display: flex;
+		gap: 30px;
+		align-items: center;
+	}
+	
+	nav ul li{
+		list-style-type: none;
+	}
+	
+	nav ul li a{
+		text-decoration: none;
+		color: black;
+	}
+	
+	.menu-icon{
+		display: none;
+	}
+	
+	.menu-icon i{
+		color: #F3C108;
+		font-size: 30px;
+	}
+	
+	@media (max-width:600px) {
+		nav ul{
+			position: absolute;
+			top: 70px;
+			left: 0;
+			right: 0;
+			flex-direction: column;
+			text-align: center;
+			background: #004274;
+			gap: 0;
+			overflow: hidden;
+		}
+		nav ul li{
+			padding: 20px;
+			padding-top: 0;
+		}
+		.menu-icon{
+			display: block;
+		}
+		#menuList{
+			transition: all 0.5s;
+		}
+	}
