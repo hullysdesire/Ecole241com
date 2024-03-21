@@ -3869,7 +3869,7 @@ a:hover{
 
 
 	nav{
-		padding: 10px 30px;
+		padding: 10px 100px;
 		display: flex;
 		align-items: center;
 		justify-content: space-between;
@@ -3878,9 +3878,7 @@ a:hover{
 		height: 70px;
 	}
 	
-	.logo{
-		color: #fff;
-	}
+	
 	
 	nav ul{
 		display: flex;
