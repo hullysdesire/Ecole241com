@@ -785,7 +785,7 @@ h6 {
     font-weight: 600;
     letter-spacing: 1px;
     line-height: 24px;
-	margin-bottom: 30px;
+	margin: 30px;
 	width: 100%;
 }
 .slider-bgimage3 .header-div-1 .btn-1 {
@@ -3478,7 +3478,7 @@ only screen and (min-resolution: 1.5dppx) {
 	}
 	.slider1-padding {
 		padding-bottom: 150px;
-		padding-top: 230px;
+		padding-top: 50px;
 	}
 	.cta-bgimage1 .cta-padding1,
 	.header3-bgimage .heading-padding,
@@ -3927,3 +3927,91 @@ a:hover{
 			transition: all 0.5s;
 		}
 	}
+
+
+
+	/* Les images du carroussel s'adapte en fonction du type de l'écran  */
+
+	/* Pour les tablettes */
+@media (min-width: 768px) and (max-width: 991px) {
+	.bgimage-property {
+	  height: 400px; /* Ajustez la hauteur selon vos besoins */
+	}
+
+	}
+
+	.header-div-1 h1 {
+		font-size: 1.5em;
+	}
+
+	.header-div-1 p {
+		font-size: 0.8em;
+	}
+
+	.btn btn-1 {
+		padding: 8px 16px;
+	}
+  
+  
+  /* Pour les mobiles */
+  @media (max-width: 767px) {
+	.bgimage-property {
+	  height: 250px; /* Ajustez la hauteur selon vos besoins */
+	}
+  }
+
+	.header-div-1 h1 {
+		font-size: 10px;
+		margin-bottom: 45px;
+	}
+
+	.header-div-1 p {
+		font-size: 0.3em;
+	}
+
+	.btn btn-1 {
+		padding: 3px 6px;
+	}
+
+
+  
+  
+
+  	/* Les images du carroussel s'adapte en fonction du type de l'écran  */
+
+
+
+
+
+
+	/* Styles par défaut pour les ordinateurs de bureau */
+.team-col4-img img {
+    width: 100%;
+    height: auto;
+}
+
+.team-col4-content h5, .team-col4-content p {
+    font-size: 1em; /* Ajustez la taille de la police en fonction de vos besoins */
+}
+
+/* Styles pour les tablettes */
+@media (max-width: 768px) {
+    .team-col4-content h5 {
+        font-size: 0.9em;
+    }
+
+    .team-col4-content p {
+        font-size: 0.8em;
+    }
+}
+
+/* Styles pour les téléphones */
+@media (max-width: 480px) {
+    .team-col4-content h5 {
+        font-size: 0.8em;
+    }
+
+    .team-col4-content p {
+        font-size: 0.7em;
+    }
+}
