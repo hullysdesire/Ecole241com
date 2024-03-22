@@ -4015,3 +4015,8 @@ a:hover{
         font-size: 0.7em;
     }
 }
+
+/* L'effet de défilement lent au clique des sections */
+html {
+    scroll-behavior: smooth;
+  }
